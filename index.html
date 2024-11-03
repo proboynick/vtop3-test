@@ -1,117 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VTOP3 Test</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="./index.js"></script>
-  </head>
-  <body>
-    <header class="header border">
-      <nav>
-        <ul class="header__nav-list">
-          <li><a class="nav-link" href="#">About us</a></li>
-          <li><a class="nav-link" href="#">Grand</a></li>
-          <li><a class="nav-link" href="#">Commissions</a></li>
-          <li><a class="nav-link" href="#">Blub</a></li>
-          <li><a class="nav-link" href="#">Contact us</a></li>
-          <li><a class="nav-link" href="#">Careers</a></li>
-        </ul>
-      </nav>
-      <div class="header__profile-controls">
-        <button class="border nav-btn">
-          <img src="./assets/svg/Planet.svg" alt="" /><span>ru</span>
-        </button>
-        <button class="nav-btn">log in</button>
-        <button class="nav-btn nav-btn_orange">sign up</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VTOP3 Test</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="./index.js"></script>
+</head>
+
+<body>
+  <div class="burger-menu">
+    <nav class="burger-nav">
+      <ul class="burger__nav-list">
+        <li><a class="nav-link" href="#">About us</a></li>
+        <li><a class="nav-link" href="#">Grand</a></li>
+        <li><a class="nav-link" href="#">Commissions</a></li>
+        <li><a class="nav-link" href="#blog">Blub</a></li>
+        <li><a class="nav-link" href="#">Contact us</a></li>
+        <li><a class="nav-link" href="#">Careers</a></li>
+      </ul>
+      <button class="burger-menu__nav-btn nav-btn">log in</button>
+      <button class="burger-menu__nav-btn nav-btn nav-btn_orange">sign up</button>
+    </nav>
+  </div>
+  <header class="header border">
+    <nav>
+      <ul class="header__nav-list">
+        <li><a class="nav-link" href="#">About us</a></li>
+        <li><a class="nav-link" href="#">Grand</a></li>
+        <li><a class="nav-link" href="#">Commissions</a></li>
+        <li><a class="nav-link" href="#blog">Blub</a></li>
+        <li><a class="nav-link" href="#">Contact us</a></li>
+        <li><a class="nav-link" href="#">Careers</a></li>
+      </ul>
+    </nav>
+    <div class="header__profile-controls">
+      <button class="border nav-btn lang-btn">
+        <img src="./assets/svg/Planet.svg" alt=""><span class="lang-btn__text">ru</span>
+      </button>
+      <button class="nav-btn">log in</button>
+      <button class="nav-btn nav-btn_orange">sign up</button>
+    </div>
+    <button class="lang-btn_small">
+      <img src="./assets/svg/Language.svg" alt=""><span class="lang-btn__text">ru</span>
+    </button>
+    <div class="burger">
+      <span class="burger__line-center"></span>
+    </div>
+  </header>
+  <main class="main">
+    <section class="banner">
+      <div class="banner__title">
+        <h1 class="title">
+          Lorem <span class="title_upper-case">ipsu</span><br>
+          <span class="title_upper-case title_orange">open</span>
+        </h1>
+        <h4 class="title__tagline">Maybe You Maybe Me.</h4>
+        <button type="button" class="banner__title-button">Partner</button>
       </div>
-    </header>
-    <main class="main">
-      <section class="banner">
-        <div class="banner__title">
-          <h1 class="title">
-            Lorem <span class="title_upper-case">ipsu</span>
-            <span class="title_upper-case title_orange">open</span>
-          </h1>
-          <h4 class="title__tagline">Maybe You Maybe Me.</h4>
-        </div>
-        <div class="banner__current-logos"></div>
-        <div class="banner__blub">
-          <h2 class="banner__blub-title">BLUB</h2>
-          <div class="banner__messages">
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
-            <div class="message">
-              <p class="message__text">
-                Payment methods: Skrill, Neteller, webmoney, Bank transfer
-              </p>
-              <span class="message__date">10.02.2023</span>
-            </div>
+      <div class="banner__current-logos">
+        <div class="banner__line banner__line_left">
+          <div class="line-item">
+            <img src="./assets/svg/Dollar.svg" alt="">
+            <img src="./assets/svg/Soccer.svg" alt="">
+            <img src="./assets/svg/M.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Dollar.svg" alt="">
+            <img src="./assets/svg/Soccer.svg" alt="">
+            <img src="./assets/svg/M.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
           </div>
-          <input type="range" min="0" max="100" value="0" class="scrollbar" />
+          <div class="line-item">
+            <img src="./assets/svg/Dollar.svg" alt="">
+            <img src="./assets/svg/Soccer.svg" alt="">
+            <img src="./assets/svg/M.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Dollar.svg" alt="">
+            <img src="./assets/svg/Soccer.svg" alt="">
+            <img src="./assets/svg/M.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+          </div>
         </div>
-      </section>
-      <div class="dot-left"></div>
-    </main>
-    <footer class="footer"></footer>
-  </body>
+        <div class="banner__line banner__line_center">
+          <div class="line-item">
+            <img src="./assets/svg/M2.svg" alt="">
+            <img src="./assets/svg/Timer.svg" alt="">
+            <img src="./assets/svg/Crown.svg" alt="">
+            <img src="./assets/svg/World.svg" alt="">
+            <img src="./assets/svg/M2.svg" alt="">
+            <img src="./assets/svg/Timer.svg" alt="">
+            <img src="./assets/svg/Crown.svg" alt="">
+            <img src="./assets/svg/World.svg" alt="">
+          </div>
+          <div class="line-item">
+            <img src="./assets/svg/M2.svg" alt="">
+            <img src="./assets/svg/Timer.svg" alt="">
+            <img src="./assets/svg/Crown.svg" alt="">
+            <img src="./assets/svg/World.svg" alt="">
+            <img src="./assets/svg/M2.svg" alt="">
+            <img src="./assets/svg/Timer.svg" alt="">
+            <img src="./assets/svg/Crown.svg" alt="">
+            <img src="./assets/svg/World.svg" alt="">
+          </div>
+        </div>
+        <div class="banner__line banner__line_right">
+          <div class="line-item">
+            <img src="./assets/svg/Crown2.svg" alt="">
+            <img src="./assets/svg/M3.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Soccer2.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Crown2.svg" alt="">
+            <img src="./assets/svg/M3.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Soccer2.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+          </div>
+          <div class="line-item">
+            <img src="./assets/svg/Crown2.svg" alt="">
+            <img src="./assets/svg/M3.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Soccer2.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Crown2.svg" alt="">
+            <img src="./assets/svg/M3.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+            <img src="./assets/svg/Soccer2.svg" alt="">
+            <img src="./assets/svg/Shield.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="banner__blub" id="blog">
+        <h2 class="banner__blub-title">BLUB</h2>
+        <div class="banner__messages">
+          <a class="message" target="_blank" href="https://baxity.com/payment-systems">
+            <p class="message__text">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </p>
+            <span class="message__date">10.02.2023</span>
+          </a>
+          <a class="message" target="_blank" href="#">
+            <p class="message__text">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </p>
+            <span class="message__date">10.02.2023</span>
+          </a>
+          <a class="message" target="_blank" href="#">
+            <p class="message__text">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </p>
+            <span class="message__date">10.02.2023</span>
+          </a>
+          <a class="message" target="_blank" href="#">
+            <p class="message__text">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </p>
+            <span class="message__date">10.02.2023</span>
+          </a>
+          <a class="message" target="_blank" href="#">
+            <p class="message__text">
+              Payment methods: Skrill, Neteller, webmoney, Bank transfer
+            </p>
+            <span class="message__date">10.02.2023</span>
+          </a>
+        </div>
+        <input type="range" min="0" max="100" value="0" class="scrollbar">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <nav class="nav-pages">
+      <ul class="footer__nav-list nav-pages__nav-list">
+        <li><a href="#" class="nav-link nav-pages__nav-link">Terms & Conditions</a></li>
+        <li><a href="#" class="nav-link nav-pages__nav-link">Cookies</a></li>
+        <li><a href="#" class="nav-link nav-pages__nav-link">Contacts</a></li>
+        <li><a href="#" class="nav-link nav-pages__nav-link desctop-hidden">Careers</a></li>
+        <li><a href="#" class="nav-link nav-pages__nav-link desctop-hidden">Brand Guide</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-socials">
+      <span class="nav-socials__title">Our social media:</span>
+      <ul class="footer__nav-list nav-socials__nav-list">
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/twitter.svg"
+              alt="twitter link"></a></li>
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/linkedin.svg"
+              alt="linkedin link"></a></li>
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/youtube.svg"
+              alt="youtube link"></a></li>
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/tiktok.svg" alt="tiktok link"></a>
+        </li>
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/telegram.svg"
+              alt="telegram link"></a></li>
+        <li><a href="#" class="nav-link nav-socials__nav-link"><img src="./assets/svg/vk.svg" alt="vk link"></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <div class="dot-left"></div>
+  <div class="dot-right"></div>
+</body>
+
 </html>
