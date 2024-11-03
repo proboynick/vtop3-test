@@ -45,7 +45,8 @@ body {
   align-items: center;
   padding: 0 48px;
   color: var(--white);
-  position: relative;
+  position: fixed;
+  top: 0;
   z-index: 10;
 }
 
@@ -216,8 +217,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  min-height: fit-content;
+  height: 100dvh;
   top: 0;
   left: 0;
   background-color: var(--bg-color);
