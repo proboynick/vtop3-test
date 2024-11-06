@@ -1,9 +1,11 @@
 const messagesBlock = document.querySelector('.banner__messages');
 const scroll = document.querySelector('.scrollbar');
 const langBtn = document.querySelector('.lang-btn');
-const langText = document.querySelector('.lang-btn__text');
+const langTexts = document.querySelectorAll('.lang-btn__text');
 const burger = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.burger-menu');
+const langBtnSmall = document.querySelector('.lang-btn_small');
+const langImg = document.querySelector('.lang-img');
 
 const MAX_SCROLL_OFFSET =
   messagesBlock.scrollHeight - messagesBlock.offsetHeight;
@@ -16,20 +18,31 @@ messagesBlock.addEventListener('scroll', () => {
 
 scroll.addEventListener('input', () => {
   messagesBlock.scrollTop = `${scroll.value * MAX_SCROLL_OFFSET * 0.01}`;
-  console.log(messagesBlock.scrollTop, scroll.value);
 });
 
-langBtn.addEventListener('click', () => {
-  switch (langText.innerHTML) {
+const switchLanguage = () => {
+  switch (langTexts[0].innerHTML) {
     case 'ru':
-      langText.innerHTML = 'en';
+      langTexts.forEach((el) => (el.innerHTML = 'en'));
       break;
     case 'en':
-      langText.innerHTML = 'ru';
+      langTexts.forEach((el) => (el.innerHTML = 'ru'));
       break;
     default:
       break;
   }
+};
+
+langBtn.addEventListener('click', () => {
+  switchLanguage();
+});
+
+langBtnSmall.addEventListener('click', () => {
+  switchLanguage();
+  langImg.classList.add('animated');
+  setTimeout(() => {
+    langImg.classList.remove('animated');
+  }, 2000);
 });
 
 burger.addEventListener('click', () => {
